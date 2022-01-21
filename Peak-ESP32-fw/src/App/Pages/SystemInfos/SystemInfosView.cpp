@@ -81,9 +81,7 @@ void SystemInfosView::Create(lv_obj_t* root)
 		"Gx\n"
 		"Gy\n"
 		"Gz\n"
-		"Mx\n"
-		"My\n"
-		"Mz"
+		"Te"
 	);
 
 	/* Item Battery */
