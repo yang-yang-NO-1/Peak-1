@@ -244,7 +244,7 @@ bool HAL::BT_Init()
 
     NimBLEDevice::init("Peak-BLE");
 
-    NimBLEDevice::setSecurityAuth(false, false, true);
+    NimBLEDevice::setSecurityAuth(false, false, false);
     NimBLEDevice::setPower(ESP_PWR_LVL_P9); /** +9db */
 
     /** create new scan */

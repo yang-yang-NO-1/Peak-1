@@ -44,9 +44,9 @@
 #define CONFIG_SCREEN_SCK_PIN       PA5
 #define CONFIG_SCREEN_MOSI_PIN      PA7
 #define CONFIG_SCREEN_BLK_PIN       12
-
+/* 在此处引用src\Port\lv_port\lv_port_disp.cpp */
 #define CONFIG_SCREEN_HOR_RES       240
-#define CONFIG_SCREEN_VER_RES       240
+#define CONFIG_SCREEN_VER_RES       320
 #define CONFIG_SCREEN_BUFFER_SIZE   (CONFIG_SCREEN_HOR_RES * CONFIG_SCREEN_VER_RES /2)
 
 /* Battery */

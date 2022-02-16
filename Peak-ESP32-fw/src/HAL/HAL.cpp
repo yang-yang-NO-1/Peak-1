@@ -18,7 +18,8 @@ void HAL::Init()
     if (lv_disp_buf_p == nullptr)
         LV_LOG_WARN("lv_port_disp_init malloc failed!\n");
 
-    HAL::BT_Init(); // ToDo: some of the process below will interrupt BLE connection, find it out
+    //HAL::BT_Init(); // ToDo: some of the process below will interrupt BLE connection, find it out
+    HAL::WiFi_Init();
     HAL::Power_Init();
     HAL::Backlight_Init();
     HAL::Encoder_Init();
@@ -37,6 +38,7 @@ void HAL::Update()
     HAL::Encoder_Update();
     HAL::Audio_Update();
     HAL::IMU_Update();
-    HAL::BT_Update();
+    //HAL::BT_Update();
+    __IntervalExecute(HAL::WiFi_Update(), 500);
     __IntervalExecute(HAL::SD_Update(), 500);
 }

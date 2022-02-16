@@ -2,7 +2,7 @@
 
 using namespace Page;
 
-#define ITEM_HEIGHT_MIN   100
+#define ITEM_HEIGHT_MIN   200
 #define ITEM_PAD          ((LV_VER_RES - ITEM_HEIGHT_MIN) / 2)
 
 void SystemInfosView::Create(lv_obj_t* root)
@@ -125,7 +125,7 @@ void SystemInfosView::Group_Init()
 	lv_group_add_obj(ui.group, ui.battery.icon);
 	lv_group_add_obj(ui.group, ui.storage.icon);
 
-	lv_group_focus_obj(ui.pose6d.icon);
+	lv_group_focus_obj(ui.imu.icon);
 }
 
 void SystemInfosView::Delete()

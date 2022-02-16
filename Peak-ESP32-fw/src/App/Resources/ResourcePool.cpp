@@ -54,6 +54,7 @@ do{\
         IMPORT_IMG(bluetooth);
         IMPORT_IMG(pose6d);
         IMPORT_IMG(joints);
+        IMPORT_IMG(BDD);
     }
 
 } /* extern "C" */

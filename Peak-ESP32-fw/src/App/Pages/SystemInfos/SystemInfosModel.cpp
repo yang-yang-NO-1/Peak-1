@@ -75,7 +75,7 @@ void Page::SystemInfosModel::GetJointsInfo(char* data, uint32_t len)
 {
     snprintf(
         data, len,
-        "0\n0\n90\n0\n0\n0\n"
+        "90\n0\n90\n0\n0\n90\n"
     );
 }
 

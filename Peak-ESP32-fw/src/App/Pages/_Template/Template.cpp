@@ -20,7 +20,7 @@ void Template::onCustomAttrConfig()
 void Template::onViewLoad()
 {
 	View.Create(root);
-	lv_label_set_text(View.ui.labelTitle, Name);
+	//lv_label_set_text(View.ui.labelTitle, Name);
 
 	AttachEvent(root);
 	AttachEvent(View.ui.canvas);

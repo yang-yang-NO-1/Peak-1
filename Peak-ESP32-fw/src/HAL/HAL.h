@@ -72,6 +72,10 @@ namespace HAL
     bool BT_Init();
     void BT_Update();
 
+/* wifi */
+    bool WiFi_Init();
+    void WiFi_Update();
+
 }
 
 #endif
